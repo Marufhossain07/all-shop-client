@@ -4,13 +4,13 @@ import {
   } from "react-router-dom";
 import Register from "../components/Register";
 import Login from "../components/Login";
-import Products from "../pages/Products";
 import ProtectedRoute from "../Protected/ProtectedRoute";
+import Home from "../pages/Home";
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <ProtectedRoute><Products></Products></ProtectedRoute>,
+      element: <ProtectedRoute><Home></Home></ProtectedRoute>,
     },
     {
       path: '/login',

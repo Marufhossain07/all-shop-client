@@ -14,7 +14,7 @@ const Register = () => {
             await signUp(data.email, data.password);
             logOut()
             setTimeout(() => {
-                navigate('/');
+                navigate('/login');
             }, 1000);
         } catch (error) {
             // const errorMessage = error.message.slice(10);
