@@ -1,4 +1,5 @@
 import  { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false)
@@ -83,7 +84,7 @@ const Login = () => {
                                 </button>
                             </div>
                             <p className=" text-sm font-medium  text-center sm:px-6 text-white">Don't have an account yet ?<span> </span>
-                                <a rel="noopener noreferrer" href="#" className="underline dark:text-gray-800">Register</a>
+                                <Link to='/register'><a rel="noopener noreferrer" href="#" className="underline dark:text-gray-800">Register</a></Link>
                             </p>
                         </div>
                     </form>
