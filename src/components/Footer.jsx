@@ -2,7 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="px-4 divide-y text-white mx-auto bg-blue-400">
+        <div className='bg-blue-400'>
+            <footer className="px-4 divide-y text-white mx-auto container">
             <div className="container flex flex-col justify-around  py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
                 <div>
                     <a className="btn btn-ghost text-4xl font-sedan lg:pl-0 text-white">AllShop</a>
@@ -34,6 +35,7 @@ const Footer = () => {
             </div>
             <div className="py-6 text-sm text-center dark:text-gray-600">©2026 AllShop. All rights reserved.</div>
         </footer>
+        </div>
     );
 };
 

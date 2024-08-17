@@ -5,7 +5,7 @@ const Navbar = () => {
     const { logOut } = useContext(AuthContext)
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar container mx-auto bg-base-100">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,7 +30,7 @@ const Navbar = () => {
                         <li><a>About Us</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-3xl">AllShop</a>
+                <a className="btn btn-ghost text-blue-400 text-3xl">AllShop</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu font-medium menu-horizontal px-1">
