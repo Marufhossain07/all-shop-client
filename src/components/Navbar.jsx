@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 
 const Navbar = () => {
-    const { logOut} = useContext(AuthContext)
+    const { logOut } = useContext(AuthContext)
 
     return (
         <div className="navbar bg-base-100">
@@ -25,18 +25,22 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
                         <li><a>Products</a></li>
+                        <li><a>About Us</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">AllShop</a>
+                <a className="btn btn-ghost text-3xl">AllShop</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                <li><a>Products</a></li>
+                <ul className="menu font-medium menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Products</a></li>
+                    <li><a>About Us</a></li>
                 </ul>
             </div>
             <div className="navbar-end">
-                <a onClick={logOut} className="btn">Logout</a>
+                <a onClick={logOut} className="btn bg-blue-400 text-white">Logout</a>
             </div>
         </div>
     );
