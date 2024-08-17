@@ -19,7 +19,7 @@ const Products = () => {
     const { data, isLoading } = useQuery({
         queryKey: ['product', category, brand, date, price, currentPage, search,max],
         queryFn: async () => {
-            const { data } = await axios.get(`http://localhost:5000/products?search=${search}&brand=${brand}&category=${category}&price=${price}&date=${date}&page=${currentPage}&size=${productPerPage}&max=${max}`)
+            const { data } = await axios.get(`https://allshop-backend.vercel.app/products?search=${search}&brand=${brand}&category=${category}&price=${price}&date=${date}&page=${currentPage}&size=${productPerPage}&max=${max}`)
             return data
         }
     });
@@ -29,7 +29,7 @@ const Products = () => {
 
     useEffect(() => {
         const getCount = async () => {
-            const { data } = await axios.get('http://localhost:5000/products-count')
+            const { data } = await axios.get('https://allshop-backend.vercel.app')
             setCount(data.result)
         }
         getCount()

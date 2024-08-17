@@ -1,8 +1,23 @@
-# React + Vite
+# AllShop -  E-Commerce System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Site URL:** [AllShop](https://all-shop-1760b.web.app/)
 
-Currently, two official plugins are available:
+**Project Overview:** AllShop helps users discover various products through huge collections of brand and categories. Easily search for products, filter products, and sort to find your desired product.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+   ## Technologies
+- Frontend: React, Router DOM, Tailwind CSS, DaisyUi, MambaUi
+- Backend: Node JS, Express JS
+- Authentication: Firebase
+- Database: MongoDB
+
+## To Run This Project Locally,follow these steps
+
+```sh
+git clone [use my code link]
+```
+```sh
+npm i
+```
+```sh
+npm run dev
+```
